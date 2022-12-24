@@ -2,30 +2,37 @@
 <html lang="en">
 <head>
     <title>Hashem's Main Page</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Welcome to Hashem's web page</h1>
+  <header id="header">
+    <nav id="nav">
+            <a class="nav-item" href="assignments/index.html">Assignments</a> |
+            <a class="nav-item" href="labs/index.html">Labs</a> |
+            <a class="nav-item" href="projects/index.html">Projects</a>
+      </nav>
+    <h1>Welcome to Hashem's web page [1172660]</h1>
+  </header>
+  <main id="main">
     <p>This is my main page for comp334 course work</p>
-
     <h2>About Myself</h2>
+    <figure>
+      <img src="./imgs/Me.png" alt="My profile picture" width="200">
+      <figcaption>My profile picture</figcaption>
+    </figure>
     <p>
-        <img src="./imgs/Me.png" alt="My profile picture" width="200" >
-        <br/>
-        I am a last year computer science student at Birzeit
-        <br/>
-        My student id is 1172660
+      I am a last year computer science student at Birzeit to know more about be go to my <a href="./personal.html">personal web page</a>
+      <br/>
+      My student id is 1172660
     </p>
-    <h2>Course Work List</h2>
-    <ul>
-        <li>
-            <a href="assignments/index.html">Assignments</a>
-        </li>
-        <li>
-            <a href="labs/index.html">Labs</a>
-        </li>
-        <li>
-            <a href="projects/index.html">Projects</a>
-        </li>
-    </ul>
+  </main>
+  <footer id="footer">
+    <p>Please note that the information provided on this webpage may not be accurate. The goal is to demonstarte HTML and CSS skills only</p>
+    <p>&copy; This content is protected by copyright laws. All rights reserved to the Author.</p>
+    <p>Author : Hashem Abu Alteen 1172660</p>
+    <a href="mailto:1172660@student.birzeit.edu">1172660@student.birzeit.edu</a>
+    <address>Jerusalem, Palestine</address>
+    <a href="./index.html">Back to main page</a> 
+  </footer>
 </body>
 </html>

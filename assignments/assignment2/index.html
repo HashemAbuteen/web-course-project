@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 2: Forms and Tables</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mystyle.css" />
+  </head>
+  <body>
+    <section>
+      <h3>Data</h3>
+      <div class="table-container">
+        <table>
+          <caption>
+            Orders
+          </caption>
+          <tr>
+            <th>Id</th>
+            <th>Date</th>
+            <th>Customer</th>
+            <th>Country</th>
+            <th>Progress</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>123</td>
+            <td>Sep 12,2017</td>
+            <td>Jean Rousseau</td>
+            <td>France</td>
+            <td class="table-cell-meter"><meter value="1"></meter></td>
+            <td><span class="status status-shipped">Shipped</span></td>
+          </tr>
+          <tr>
+            <td>144</td>
+            <td>Sep 20, 2017</td>
+            <td>Georg Hegel</td>
+            <td>Germany</td>
+            <td class="table-cell-meter"><meter value="1"></meter></td>
+            <td><span class="status status-shipped">Shipped</span></td>
+          </tr>
+          <tr>
+            <td>149</td>
+            <td>Oct 3.2017</td>
+            <td>John Locke</td>
+            <td>England</td>
+            <td class="table-cell-meter"><meter value="0.7"></meter></td>
+            <td><span class="status status-processing">Processing</span></td>
+          </tr>
+          <tr>
+            <td>162</td>
+            <td>Oct 8, 2017</td>
+            <td>Thomas Hobbes</td>
+            <td>England</td>
+            <td class="table-cell-meter"><meter value="0.3"></meter></td>
+            <td><span class="status status-pending">pending</span></td>
+          </tr>
+          <tr>
+            <td>177</td>
+            <td>Oct 10, 2017</td>
+            <td>Johann Fichte</td>
+            <td>England</td>
+            <td class="table-cell-meter"><meter value="0.3"></meter></td>
+            <td><span class="status status-pending">pending</span></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h3>Revise</h3>
+      <form
+        method="post"
+        action="http://www.randyconnolly.com/tests/process.php"
+      >
+        <fieldset>
+          <legend>Filter Orders</legend>
+          <div>
+            <label for="name">Customer</label>
+            <input type="text" id="name" placeholder="Enter Name" />
+          </div>
+          <div>
+            <label for="country">Country</label>
+            <select id="country">
+              <option value="">Choose a Country</option>
+              <option value="Egypt">Egypt</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
+              <option value="United Kingdom">United Kingdom</option>
+            </select>
+          </div>
+          <div class="form-radio-section">
+            <label for="status">Status</label>
+            <input type="radio" id="pending" name="status" value="Pending" />
+            <label class="label-radio" for="pending">Pending</label>
+            <input
+              type="radio"
+              id="processing"
+              name="status"
+              value="processing"
+            />
+            <label class="label-radio" for="processing">Processing</label>
+            <input type="radio" id="shipped" name="status" value="Shipped" />
+            <label class="label-radio" for="shipped">Shipped</label>
+          </div>
+          <div>
+            <label for="date">Order Date</label>
+            <input type="date" id="date" />
+          </div>
+          <div>
+            <input type="submit" value="Submit" />
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>

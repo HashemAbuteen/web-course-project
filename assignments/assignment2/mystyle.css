@@ -1,0 +1,53 @@
+/* form styling */
+form {
+    margin: 0.5rem 2rem;
+}
+
+form legend {
+    width: 100%;
+    text-align: center;
+    padding: 0.25rem;
+}
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+form .label-radio {
+    display: inline;
+    font-weight: normal;
+}
+
+form fieldset>div {
+    margin: 1rem 0 1rem 0.5rem;
+}
+form input[type="submit"] {
+    padding: 0.5rem 1rem;
+}
+
+/* table styling */
+.table-container {
+    display: flex;
+}
+table {
+    margin: 0.5rem 2rem;
+    flex: 1;
+
+}
+table th , table td {
+    padding: 0.6rem 1.2rem;
+    text-align: left;
+}
+table caption {
+    padding: 0.25rem;
+}
+table meter {
+    width: 100%;
+    color: blue;
+}
+.table-cell-meter {
+    text-align: center;
+    padding-right: 2rem;
+}
+
